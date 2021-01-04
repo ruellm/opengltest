@@ -1,0 +1,22 @@
+out vec4 FragColor;                                                           
+in vec2 TexCoord0; 																			 
+in vec3 Normal0;  /* Variable names must MATCH with output from vertex shader*/
+
+uniform sampler2D gSampler;                                                        
+uniform float alpha;
+			
+void main()                                                                   
+{                                                                             
+	vec4 localColor = texture(gSampler, TexCoord0.xy);   
+	
+	// transparency of texture 
+	// https://learnopengl.com/Advanced-OpenGL/Blending
+	if(localColor.a < 0.1)
+        discard;
+	float brightness = (localColor.r * 0.2126) + (localColor.b * 0.7152) + (localColor.b * 0.0722);
+	if(brightness > 0.7)
+		FragColor = localColor * alpha;
+	else
+		FragColor = vec4(0.0);
+}
+//---

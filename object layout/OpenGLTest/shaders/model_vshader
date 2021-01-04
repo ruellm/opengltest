@@ -1,0 +1,30 @@
+in vec3 vPosition;
+in vec2 vTexCoord;
+in vec3 vNormal;
+
+uniform mat4 worldMatrix;
+uniform mat4 projectionMatrix;
+uniform mat4 viewMatrix;
+
+out vec2 TexCoord;	
+out vec3 Normal;
+
+void main()                                                                   
+{                  
+     vec3 WorldPos   = (worldMatrix * vec4(vPosition, 1.0)).xyz;                                      
+	 gl_Position =  projectionMatrix * viewMatrix *  worldMatrix * vec4(vPosition, 1.0);
+	 TexCoord = vTexCoord;
+	 Normal = vNormal;
+	 
+	 if(fog_vs_enable == 1)
+	 {
+		vec4 worldPosition = worldMatrix * vec4(vPosition, 1.0);
+		vec4 positionRelativeToCam = viewMatrix * worldPosition;
+		Fog_ComputeVisibility(positionRelativeToCam);
+	 }
+	 
+	  if(lightCountVS > 0)
+	 {
+		ComputeLightVector(WorldPos);
+	 }
+}

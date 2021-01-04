@@ -1,0 +1,9 @@
+layout(location = 0) out vec4 FragColor;
+
+in vec2 TexCoord;
+uniform sampler2D gSampler;
+
+void main()
+{
+	FragColor = texture2D(gSampler, TexCoord);;
+}

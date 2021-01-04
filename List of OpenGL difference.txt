@@ -1,0 +1,21 @@
+OpenGL ES 2.0 lacks
+
+1. VAO support
+2. indexing in GLSL
+ example Bones[boneid[0]] not allowed.
+  gBones[BoneIDs[3]]
+3. glDrawElementsBaseVertex not supported
+4. GLSL reference,
+   layout not supported, attribute needs to be queried
+   out is varying
+5. glDrawElements only support unsigned short or unsigned byte
+  GL_INT is not accepted in glVertexAttribIPointer
+6. glVertexAttribIPointer this is not implemented
+7. Uniform variable with initializer is not supported in opengl es 2.0
+8. OpenGL ES 2.0 does not support multiple render target, ex: multiple fragcolor
+   GL_COLOR_ATTACHMENT0 one target only.
+9. ivec4 is not allowed as attribute in opengl es 2.Integer attributes are not supported in ES 2.0. From the GLSL ES 1.00 spec (which is the GLSL version used with ES 2.0):
+The attribute qualifier can be used only with the data types float, vec2, vec3, vec4, mat2, mat3, and mat4.
+10. From the OpenGL ES SL 1.0 spec, paragraph 4.1.9 Arrays (p. 24):
+There is no mechanism for initializing arrays at declaration time from within a shader.
+11. Some GPU does not accept comment at end of shader code.

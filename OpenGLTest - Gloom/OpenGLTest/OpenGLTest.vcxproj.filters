@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="glad">
+      <UniqueIdentifier>{f184866f-d17e-4977-a8a8-56a7a84d061d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{7b89dd4c-c80f-41b8-aa6a-2d1491af3d6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{de1b720d-08d4-4020-9129-4c8e61a5b8c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\include">
+      <UniqueIdentifier>{872783cc-0ecc-4530-bc7d-ab699e891a9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\src">
+      <UniqueIdentifier>{c6b9263b-cc22-4f1a-bad4-c80c9ec95b26}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+    <Text Include="shaders\basic_fshader.txt">
+      <Filter>shaders</Filter>
+    </Text>
+    <Text Include="shaders\basic_vshader.txt">
+      <Filter>shaders</Filter>
+    </Text>
+    <Text Include="shaders\vshader_world.txt">
+      <Filter>shaders</Filter>
+    </Text>
+    <Text Include="shaders\model_fshader.txt">
+      <Filter>shaders</Filter>
+    </Text>
+    <Text Include="shaders\model_vshader.txt">
+      <Filter>shaders</Filter>
+    </Text>
+    <Text Include="shaders\basic_fshader_ortho.txt">
+      <Filter>shaders</Filter>
+    </Text>
+    <Text Include="shaders\basic_vshader_ortho.txt">
+      <Filter>shaders</Filter>
+    </Text>
+    <Text Include="shaders\blur_fs.txt">
+      <Filter>shaders</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lightning_fx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\animated_sprite.h">
+      <Filter>common\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\assimp_mesh.h">
+      <Filter>common\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\Camera.h">
+      <Filter>common\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\common.h">
+      <Filter>common\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\GLShaderFx.h">
+      <Filter>common\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\Model3D.h">
+      <Filter>common\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\obj_model.h">
+      <Filter>common\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\PathUtility.h">
+      <Filter>common\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\scene_object.h">
+      <Filter>common\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\texture2D.h">
+      <Filter>common\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\tokenizer.h">
+      <Filter>common\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\stb_image.h">
+      <Filter>common\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\FBO.h">
+      <Filter>common\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd party\glad\src\glad.c">
+      <Filter>glad</Filter>
+    </ClCompile>
+    <ClCompile Include="stb_image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelShaderFx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lightning_fx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\animated_sprite.cpp">
+      <Filter>common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\assimp_mesh.cpp">
+      <Filter>common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\Camera.cpp">
+      <Filter>common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\GLShaderFx.cpp">
+      <Filter>common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\Model3D.cpp">
+      <Filter>common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\obj_model.cpp">
+      <Filter>common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\PathUtility.cpp">
+      <Filter>common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\scene_object.cpp">
+      <Filter>common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\texture2D.cpp">
+      <Filter>common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\tokenizer.cpp">
+      <Filter>common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\FBO.cpp">
+      <Filter>common\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\utility.cpp">
+      <Filter>common\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\skinning.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\skinning.vs">
+      <Filter>shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,978 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="glad">
+      <UniqueIdentifier>{f184866f-d17e-4977-a8a8-56a7a84d061d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core">
+      <UniqueIdentifier>{d2f913fc-39b3-4113-a298-81012954e51c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core\data">
+      <UniqueIdentifier>{f5bae84f-a3e7-4c9d-8986-2818ad28033f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core\effects">
+      <UniqueIdentifier>{bce4bfbf-ff0b-4b74-bc6e-37d8172f42e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core\engine">
+      <UniqueIdentifier>{2a94a9c9-31e4-4486-a1fa-a1c294f54b45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core\game">
+      <UniqueIdentifier>{0af0a178-c87d-4d63-823c-b30f1fe01331}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core\include">
+      <UniqueIdentifier>{b7d54237-3c59-4c55-afc1-a43b13035d99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core\include\engine">
+      <UniqueIdentifier>{7798f7de-f7a8-457b-94ac-7b663aa65afc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core\include\scene">
+      <UniqueIdentifier>{f31d70ec-e4ef-4386-a6ce-dc3bcb7fcacc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core\include\states">
+      <UniqueIdentifier>{7bf7a08c-c2bd-4264-9f4d-f9e9d076e740}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core\include\unittest">
+      <UniqueIdentifier>{4b934a50-045c-49b5-8ab6-b6fedcea0ad5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core\network">
+      <UniqueIdentifier>{ff41d89a-ef15-41fa-ae03-33d83e138419}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core\platform">
+      <UniqueIdentifier>{bd79e0a8-f7e7-4561-854f-3062bc12e38b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core\resource">
+      <UniqueIdentifier>{0c51e778-f82f-471d-8be4-865f10c04b2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core\scene">
+      <UniqueIdentifier>{f07871a3-abbb-449e-9b68-fd255af5276c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core\states">
+      <UniqueIdentifier>{466e3fd6-9824-4eba-93d0-aa3b39d1f5f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core\ui">
+      <UniqueIdentifier>{e92b4496-d971-49ee-a82f-32c44de6dfac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core\unittest">
+      <UniqueIdentifier>{f97801fa-07a7-4077-915d-009caf759f0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core\utility">
+      <UniqueIdentifier>{5f42c21d-bba0-421f-9e3a-8abd0f2246df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core\include\3rd_party">
+      <UniqueIdentifier>{8bb3cb81-7085-472a-b27a-64dcb600ee66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core\include\3rd_party\ndollar">
+      <UniqueIdentifier>{5a2b55fb-891c-4eb7-8d36-6aae04389457}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core\3rd_party">
+      <UniqueIdentifier>{ea6d6269-9d33-4902-9459-ddcf7ed7d476}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core\3rd_party\pdollar">
+      <UniqueIdentifier>{4326c912-4661-44fc-a132-59304b4f7f49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core\include\network">
+      <UniqueIdentifier>{91f26afc-e77f-4630-a122-2dc7400ae559}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core\include\platform">
+      <UniqueIdentifier>{488474f6-61cc-4f35-a6ab-356e0fa28ec0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core\graphics">
+      <UniqueIdentifier>{94e51c6d-94dc-46ed-ba01-1809ba4f781a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core\include\graphics">
+      <UniqueIdentifier>{21c0b6cc-80f0-4441-a8b4-920f9cffebe1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core\include\effects">
+      <UniqueIdentifier>{ad204c10-c1a1-44c5-902d-a8da255d02ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core\include\ui">
+      <UniqueIdentifier>{9c42e62e-8baf-4ac3-82f7-0658f59393b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core\include\game">
+      <UniqueIdentifier>{0d4fe556-397f-4da1-96ed-4540cde8641f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core\include\data">
+      <UniqueIdentifier>{76c86547-64e6-4c07-8a13-d90e3db4bfbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core\include\utility">
+      <UniqueIdentifier>{98d8c5eb-6e97-4347-a179-e9e7dafa0ef8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core\include\graphics\stroking">
+      <UniqueIdentifier>{14ab77e1-122f-4834-8c2a-e28751f02e0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core\graphics\stroking">
+      <UniqueIdentifier>{b1c9a50e-01ce-4f8c-9db7-ba3a8be4e12d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core\game\symbol">
+      <UniqueIdentifier>{8cdd6b22-0f2b-49bd-beba-2cb3a22ce53d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core\map">
+      <UniqueIdentifier>{a814134f-c664-47aa-8060-40f9b4b5306d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core\game\status_effects">
+      <UniqueIdentifier>{90d51950-0c76-4e3d-ad5b-f9d0eb9848e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core\game\rune_processor">
+      <UniqueIdentifier>{8d088c98-f9dd-4188-a976-91caae6e0c99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core\audio">
+      <UniqueIdentifier>{d57c745b-6ad9-4ff5-b9d4-cbb478285caf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\3rd_party\ndollar\GeometricRecognizer.h">
+      <Filter>ramo-core\include\3rd_party\ndollar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\3rd_party\ndollar\GeometricRecognizerTypes.h">
+      <Filter>ramo-core\include\3rd_party\ndollar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\3rd_party\ndollar\GestureTemplate.h">
+      <Filter>ramo-core\include\3rd_party\ndollar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\3rd_party\ndollar\MultipleStrokeGestureTemplate.h">
+      <Filter>ramo-core\include\3rd_party\ndollar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\3rd_party\ndollar\PathWriter.h">
+      <Filter>ramo-core\include\3rd_party\ndollar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\3rd_party\ndollar\SampleGestures.h">
+      <Filter>ramo-core\include\3rd_party\ndollar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\3rd_party\ndollar\SampleMultiStrokeGestures.h">
+      <Filter>ramo-core\include\3rd_party\ndollar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\3rd_party\ndollar\utils.h">
+      <Filter>ramo-core\include\3rd_party\ndollar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\data\battlefield.h">
+      <Filter>ramo-core\include\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\data\game_data.h">
+      <Filter>ramo-core\include\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\effects\fireball.h">
+      <Filter>ramo-core\include\effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\effects\lightning_strike.h">
+      <Filter>ramo-core\include\effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\effects\particle_system.h">
+      <Filter>ramo-core\include\effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\effects\rune_summon_fx.h">
+      <Filter>ramo-core\include\effects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\engine\engine.h">
+      <Filter>ramo-core\include\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\engine\event.h">
+      <Filter>ramo-core\include\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\engine\graphics.h">
+      <Filter>ramo-core\include\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\engine\state.h">
+      <Filter>ramo-core\include\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\game\actor.h">
+      <Filter>ramo-core\include\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\game\assimp_gameobject.h">
+      <Filter>ramo-core\include\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\game\battle_field.h">
+      <Filter>ramo-core\include\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\game\battlefield_crystal.h">
+      <Filter>ramo-core\include\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\game\fire_sentinel.h">
+      <Filter>ramo-core\include\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\game\game.h">
+      <Filter>ramo-core\include\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\game\game_character.h">
+      <Filter>ramo-core\include\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\game\hex_tile.h">
+      <Filter>ramo-core\include\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\game\mana_stone.h">
+      <Filter>ramo-core\include\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\game\manastone_gameobject.h">
+      <Filter>ramo-core\include\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\game\melee_actor.h">
+      <Filter>ramo-core\include\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\game\rune.h">
+      <Filter>ramo-core\include\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\game\sharp_scale.h">
+      <Filter>ramo-core\include\game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\graphics\stroking\Point2D.h">
+      <Filter>ramo-core\include\graphics\stroking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\graphics\stroking\Stroking2D.h">
+      <Filter>ramo-core\include\graphics\stroking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\graphics\animated_sprite.h">
+      <Filter>ramo-core\include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\graphics\assimp_mesh.h">
+      <Filter>ramo-core\include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\graphics\billboard.h">
+      <Filter>ramo-core\include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\graphics\bitmap_font.h">
+      <Filter>ramo-core\include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\graphics\custom_mesh.h">
+      <Filter>ramo-core\include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\graphics\FBO.h">
+      <Filter>ramo-core\include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\graphics\fog_fx.h">
+      <Filter>ramo-core\include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\graphics\gaussian_blur.h">
+      <Filter>ramo-core\include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\graphics\glshaderfx.h">
+      <Filter>ramo-core\include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\graphics\obj_model.h">
+      <Filter>ramo-core\include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\graphics\point_light_fx.h">
+      <Filter>ramo-core\include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\graphics\solid_rect.h">
+      <Filter>ramo-core\include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\graphics\sprite2D.h">
+      <Filter>ramo-core\include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\graphics\texture2D.h">
+      <Filter>ramo-core\include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\graphics\textured_rect3d.h">
+      <Filter>ramo-core\include\graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\network\linux_socket.h">
+      <Filter>ramo-core\include\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\network\net_socket.h">
+      <Filter>ramo-core\include\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\network\netpacket.h">
+      <Filter>ramo-core\include\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\network\netpacket_factory.h">
+      <Filter>ramo-core\include\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\network\network_manager.h">
+      <Filter>ramo-core\include\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\network\windows_socket.h">
+      <Filter>ramo-core\include\network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\platform\android_platform.h">
+      <Filter>ramo-core\include\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\platform\desktop_glfw_platform.h">
+      <Filter>ramo-core\include\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\platform\platform_adapter.h">
+      <Filter>ramo-core\include\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\scene\assimp_clone.h">
+      <Filter>ramo-core\include\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\scene\camera.h">
+      <Filter>ramo-core\include\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\scene\component_system.h">
+      <Filter>ramo-core\include\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\scene\game_object.h">
+      <Filter>ramo-core\include\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\scene\object2D.h">
+      <Filter>ramo-core\include\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\scene\transition_effects.h">
+      <Filter>ramo-core\include\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\states\battle_state.h">
+      <Filter>ramo-core\include\states</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\states\loader_state.h">
+      <Filter>ramo-core\include\states</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\states\splash_state.h">
+      <Filter>ramo-core\include\states</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\ui\button.h">
+      <Filter>ramo-core\include\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\ui\cast_window.h">
+      <Filter>ramo-core\include\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\ui\dormant_window.h">
+      <Filter>ramo-core\include\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\ui\listbox.h">
+      <Filter>ramo-core\include\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\ui\manastone_details_wndw.h">
+      <Filter>ramo-core\include\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\ui\message_box.h">
+      <Filter>ramo-core\include\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\ui\progress_bar.h">
+      <Filter>ramo-core\include\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\ui\rect_button.h">
+      <Filter>ramo-core\include\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\ui\sliding_window.h">
+      <Filter>ramo-core\include\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\ui\stone_placement_window.h">
+      <Filter>ramo-core\include\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\ui\summon_window.h">
+      <Filter>ramo-core\include\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\ui\uibase.h">
+      <Filter>ramo-core\include\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\ui\uimanager.h">
+      <Filter>ramo-core\include\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\ui\window.h">
+      <Filter>ramo-core\include\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\unittest\unittest_1.h">
+      <Filter>ramo-core\include\unittest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\utility\Interpolator.h">
+      <Filter>ramo-core\include\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\utility\logger.h">
+      <Filter>ramo-core\include\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\utility\path_utility.h">
+      <Filter>ramo-core\include\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\utility\Random.h">
+      <Filter>ramo-core\include\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\utility\string_helper.h">
+      <Filter>ramo-core\include\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\utility\timer.h">
+      <Filter>ramo-core\include\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\utility\tokenizer.h">
+      <Filter>ramo-core\include\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\utility\utility.h">
+      <Filter>ramo-core\include\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\adapter.h">
+      <Filter>ramo-core\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\common.h">
+      <Filter>ramo-core\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\resource.h">
+      <Filter>ramo-core\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\3rd_party\stb_image.h">
+      <Filter>ramo-core\include\3rd_party</Filter>
+    </ClInclude>
+    <ClInclude Include="ComponentSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\states\map_state.h">
+      <Filter>ramo-core\include\states</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\audio\logging.h">
+      <Filter>ramo-core\audio</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="OpenGLTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd party\glad\src\glad.c">
+      <Filter>glad</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\3rd_party\pdollar\Geometry.cpp">
+      <Filter>ramo-core\3rd_party\pdollar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\3rd_party\pdollar\Gesture.cpp">
+      <Filter>ramo-core\3rd_party\pdollar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\3rd_party\pdollar\PointCloudRecognizer.cpp">
+      <Filter>ramo-core\3rd_party\pdollar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\data\battlefield.cpp">
+      <Filter>ramo-core\data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\data\game_data.cpp">
+      <Filter>ramo-core\data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\engine\engine.cpp">
+      <Filter>ramo-core\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\engine\event.cpp">
+      <Filter>ramo-core\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\engine\graphics.cpp">
+      <Filter>ramo-core\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\engine\state.cpp">
+      <Filter>ramo-core\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\graphics\stroking\Point2D.cpp">
+      <Filter>ramo-core\graphics\stroking</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\graphics\stroking\Stroking2D.cpp">
+      <Filter>ramo-core\graphics\stroking</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\network\netpacket.cpp">
+      <Filter>ramo-core\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\network\netpacket_factory.cpp">
+      <Filter>ramo-core\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\network\network_manager.cpp">
+      <Filter>ramo-core\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\network\windows_socket.cpp">
+      <Filter>ramo-core\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\platform\desktop_glfw_platform.cpp">
+      <Filter>ramo-core\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\platform\platform_adapter.cpp">
+      <Filter>ramo-core\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\resource\resource.cpp">
+      <Filter>ramo-core\resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\unittest\unittest_1.cpp">
+      <Filter>ramo-core\unittest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\utility\logger.cpp">
+      <Filter>ramo-core\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\utility\path_utility.cpp">
+      <Filter>ramo-core\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\utility\string_helper.cpp">
+      <Filter>ramo-core\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\utility\timer.cpp">
+      <Filter>ramo-core\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\utility\tokenizer.cpp">
+      <Filter>ramo-core\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\utility\utility.cpp">
+      <Filter>ramo-core\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\adapter.cpp">
+      <Filter>ramo-core</Filter>
+    </ClCompile>
+    <ClCompile Include="ComponentSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\symbol\s1.cpp">
+      <Filter>ramo-core\game\symbol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\symbol\s2.cpp">
+      <Filter>ramo-core\game\symbol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\symbol\s3.cpp">
+      <Filter>ramo-core\game\symbol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\symbol\s4.cpp">
+      <Filter>ramo-core\game\symbol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\symbol\s5.cpp">
+      <Filter>ramo-core\game\symbol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\symbol\s6.cpp">
+      <Filter>ramo-core\game\symbol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\symbol\s7.cpp">
+      <Filter>ramo-core\game\symbol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\symbol\s8.cpp">
+      <Filter>ramo-core\game\symbol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\symbol\s9.cpp">
+      <Filter>ramo-core\game\symbol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\symbol\s10.cpp">
+      <Filter>ramo-core\game\symbol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\symbol\s11.cpp">
+      <Filter>ramo-core\game\symbol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\symbol\s12.cpp">
+      <Filter>ramo-core\game\symbol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\network\socket_factory.cpp">
+      <Filter>ramo-core\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\map\MapUtil.cpp">
+      <Filter>ramo-core\map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\network\HttpParser.cpp">
+      <Filter>ramo-core\network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\actor_info_window.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\animated_button.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\bar_window.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\button.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\capture_creature_window.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\capture_rune_window.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\cast_drawing_base.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\cast_window.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\codex_window_v2.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\dormant_window.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\fade_window.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\horz_listbox.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\img_progress_bar.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\info_window.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\instruction_window.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\labeled_window.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\listbox.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\manastone_details_wndw.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\match_over_window.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\match_window.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\message_box.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\moving_sprite2D.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\portal_options_window.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\progress_bar.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\ramo_full_window.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\rect_button.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\rune_info_window.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\select_gemstone_window.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\select_with_summary_layout.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\sliding_window.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\stone_placement_window.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\suggestions_window.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\summon_window.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\surrender_window.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\tab_control.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\text_button_horz.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\text_viewport.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\toggle_button.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\tutorial_hand.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\uibase.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\uimanager.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\vertz_listbox.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\window.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\zoom_window.cpp">
+      <Filter>ramo-core\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\states\academy_state.cpp">
+      <Filter>ramo-core\states</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\states\astral_battlefield_state.cpp">
+      <Filter>ramo-core\states</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\states\battle_state.cpp">
+      <Filter>ramo-core\states</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\states\loader_state.cpp">
+      <Filter>ramo-core\states</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\states\lobby_state.cpp">
+      <Filter>ramo-core\states</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\states\map_state.cpp">
+      <Filter>ramo-core\states</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\states\splash_state.cpp">
+      <Filter>ramo-core\states</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\states\town_state.cpp">
+      <Filter>ramo-core\states</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\actor.cpp">
+      <Filter>ramo-core\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\actor_builder.cpp">
+      <Filter>ramo-core\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\actor_def.cpp">
+      <Filter>ramo-core\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\assimp_gameobject.cpp">
+      <Filter>ramo-core\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\astral_assets.cpp">
+      <Filter>ramo-core\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\avatar.cpp">
+      <Filter>ramo-core\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\battlefield_crystal.cpp">
+      <Filter>ramo-core\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\creature_actor.cpp">
+      <Filter>ramo-core\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\fire_sentinel.cpp">
+      <Filter>ramo-core\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\game.cpp">
+      <Filter>ramo-core\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\gem_evaluator.cpp">
+      <Filter>ramo-core\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\ghoul.cpp">
+      <Filter>ramo-core\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\lycanus.cpp">
+      <Filter>ramo-core\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\mana_stone.cpp">
+      <Filter>ramo-core\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\manastone_gameobject.cpp">
+      <Filter>ramo-core\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\melee_actor.cpp">
+      <Filter>ramo-core\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\portal_info.cpp">
+      <Filter>ramo-core\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\rune.cpp">
+      <Filter>ramo-core\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\rune_builder.cpp">
+      <Filter>ramo-core\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\rune_timer_ui.cpp">
+      <Filter>ramo-core\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\sharp_scale.cpp">
+      <Filter>ramo-core\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\status_effect.cpp">
+      <Filter>ramo-core\game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\status_effects\status_effect_r7.cpp">
+      <Filter>ramo-core\game\status_effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\status_effects\status_effect_r11.cpp">
+      <Filter>ramo-core\game\status_effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\status_effects\status_effect_r12.cpp">
+      <Filter>ramo-core\game\status_effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\rune_processor\rune_processor.cpp">
+      <Filter>ramo-core\game\rune_processor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\rune_processor\rune_processor_blessing.cpp">
+      <Filter>ramo-core\game\rune_processor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\rune_processor\rune_processor_curse.cpp">
+      <Filter>ramo-core\game\rune_processor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\rune_processor\rune_processor_damage.cpp">
+      <Filter>ramo-core\game\rune_processor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\rune_processor\rune_processor_fuse.cpp">
+      <Filter>ramo-core\game\rune_processor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\rune_processor\rune_processor_regenerate.cpp">
+      <Filter>ramo-core\game\rune_processor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\rune_processor\rune_processor_summon.cpp">
+      <Filter>ramo-core\game\rune_processor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\effects\arrow_vfx_base.cpp">
+      <Filter>ramo-core\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\effects\buff_debuff_vfx.cpp">
+      <Filter>ramo-core\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\effects\c3_attack_vfx.cpp">
+      <Filter>ramo-core\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\effects\c4_attack_vfx.cpp">
+      <Filter>ramo-core\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\effects\c11_attack_vfx.cpp">
+      <Filter>ramo-core\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\effects\c12_attack_vfx.cpp">
+      <Filter>ramo-core\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\effects\c23_attack_vfx.cpp">
+      <Filter>ramo-core\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\effects\c24_attack_vfx.cpp">
+      <Filter>ramo-core\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\effects\c25_attack_vfx.cpp">
+      <Filter>ramo-core\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\effects\fireball.cpp">
+      <Filter>ramo-core\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\effects\healing_vfx.cpp">
+      <Filter>ramo-core\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\effects\lightning_strike.cpp">
+      <Filter>ramo-core\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\effects\magic_cast_vfx.cpp">
+      <Filter>ramo-core\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\effects\manacrystal_vfx.cpp">
+      <Filter>ramo-core\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\effects\obelisk_rune.cpp">
+      <Filter>ramo-core\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\effects\particle_emitters.cpp">
+      <Filter>ramo-core\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\effects\particle_system.cpp">
+      <Filter>ramo-core\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\effects\portal_vfx.cpp">
+      <Filter>ramo-core\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\effects\prefab_particles.cpp">
+      <Filter>ramo-core\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\effects\rune_summon_fx.cpp">
+      <Filter>ramo-core\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\effects\shield_fx_r7.cpp">
+      <Filter>ramo-core\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\effects\skull_hit_vfx.cpp">
+      <Filter>ramo-core\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\effects\zoom_rect_vfx.cpp">
+      <Filter>ramo-core\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\effects\zoom_text_vfx.cpp">
+      <Filter>ramo-core\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\graphics\animated_sprite.cpp">
+      <Filter>ramo-core\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\graphics\assimp_mesh.cpp">
+      <Filter>ramo-core\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\graphics\assimp_mesh_sprite.cpp">
+      <Filter>ramo-core\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\graphics\billboard.cpp">
+      <Filter>ramo-core\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\graphics\bitmap_font.cpp">
+      <Filter>ramo-core\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\graphics\colored_rect3d.cpp">
+      <Filter>ramo-core\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\graphics\custom_mesh.cpp">
+      <Filter>ramo-core\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\graphics\FBO.cpp">
+      <Filter>ramo-core\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\graphics\fog_fx.cpp">
+      <Filter>ramo-core\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\graphics\gaussian_blur.cpp">
+      <Filter>ramo-core\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\graphics\glshaderfx.cpp">
+      <Filter>ramo-core\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\graphics\point_light_fx.cpp">
+      <Filter>ramo-core\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\graphics\postprocess_utility.cpp">
+      <Filter>ramo-core\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\graphics\render_rect.cpp">
+      <Filter>ramo-core\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\graphics\solid_rect.cpp">
+      <Filter>ramo-core\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\graphics\sprite2D.cpp">
+      <Filter>ramo-core\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\graphics\texture2D.cpp">
+      <Filter>ramo-core\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\graphics\textured_rect3d.cpp">
+      <Filter>ramo-core\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\scene\assimp_clone.cpp">
+      <Filter>ramo-core\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\scene\camera.cpp">
+      <Filter>ramo-core\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\scene\component_system.cpp">
+      <Filter>ramo-core\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\scene\game_object.cpp">
+      <Filter>ramo-core\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\scene\object2D.cpp">
+      <Filter>ramo-core\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\scene\pickable_billboard.cpp">
+      <Filter>ramo-core\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\scene\scene_utility.cpp">
+      <Filter>ramo-core\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\scene\transition_effects.cpp">
+      <Filter>ramo-core\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\scene\unity_animation_curve.cpp">
+      <Filter>ramo-core\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\audio\AudioTrack.cpp">
+      <Filter>ramo-core\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\data\tutorial_data.cpp">
+      <Filter>ramo-core\data</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

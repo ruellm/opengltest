@@ -1,0 +1,9 @@
+out vec4 FragColor;
+uniform vec2 resolution;
+//uniform sampler2D gSampler;  
+void main()
+{
+	//vec2 position = ( gl_FragCoord.xy / resolution.xy );
+	//FragColor = texture(gSampler, position);   
+	FragColor = vec4(1, 0, 0, 1);
+}

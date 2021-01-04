@@ -1,0 +1,13 @@
+in float visibility;
+uniform vec3 fog_skycolor;
+uniform int fog_fs_enable;
+
+vec4 Fog_GetFogColor(vec4 color)
+{
+	vec4 foggedColor = mix(vec4(fog_skycolor,1.0), color, visibility);
+	
+	//restore alpha it should not affect for the fog
+	foggedColor.a = color.a;
+	
+	return  foggedColor;
+}

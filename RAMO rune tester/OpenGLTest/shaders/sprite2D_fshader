@@ -1,0 +1,11 @@
+in vec2 TexCoord;
+out vec4 FragColor;
+
+uniform sampler2D gSampler;
+
+void main()
+{
+    FragColor = texture(gSampler, TexCoord);
+	if(FragColor.a == 0.0)
+		discard;
+}

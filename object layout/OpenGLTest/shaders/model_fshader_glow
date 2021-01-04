@@ -1,0 +1,40 @@
+layout (location = 0) out vec4 FragColor;
+layout (location = 1) out vec4 BrightColor;
+                                      
+in vec2 TexCoord;
+in vec3 Normal;
+
+uniform sampler2D gSampler;
+uniform float alpha;
+uniform int darken;
+uniform int glow;
+
+void main()                                                                   
+{                                                                             
+	vec4 localColor = texture(gSampler, TexCoord.xy);
+	vec4 finalColor = localColor;
+	finalColor.a *= alpha;	
+	
+	vec4 diffuseColor  = vec4(1, 1, 1, 1);
+	if(lightCountFS > 0 )
+	{
+		diffuseColor  = ComputePointLights(Normal);
+	}
+	
+	finalColor = finalColor * diffuseColor;
+	if(fog_fs_enable == 1)
+	{
+		finalColor = Fog_GetFogColor(finalColor);
+	}
+
+	vec4 ambient = vec4(1, 1, 1, 1);
+	if( darken == 1 )
+		ambient = vec4(0.5, 0.5, 0.5, 1);
+		
+	FragColor =  finalColor * ambient;
+	
+	if(glow == 1)
+		BrightColor = localColor;
+	else
+		BrightColor = vec4(0,0,0,1);
+}

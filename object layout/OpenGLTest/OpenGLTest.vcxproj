@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6AC91D47-C8D4-4FD1-878A-82FFE0D3E49A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>OpenGLTest</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <ProjectName>ObjectLayout</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\OpenGL\3rd party\glfw-3.2.1.bin.WIN64\glfw-3.2.1.bin.WIN64\include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\OpenGL\3rd party\glfw-3.2.1.bin.WIN64\glfw-3.2.1.bin.WIN64\lib-vc2015;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\..\3rd party\glfw-3.2.1.bin.WIN64\glfw-3.2.1.bin.WIN64\include;..\..\3rd party\glad\include;..\..\3rd party\glm-0.9.9-a1\glm-0.9.9-a1;..\..\3rd party\assimp\include;..\..\..\RAMO\Source Code\core\3rd_party;..\..\..\RAMO\Source Code\core\include;D:\repository\RAMO\Source Code\core\include\3rd_party;..\..\3rd party\pthreads-win32\include;$(IncludePath)</IncludePath>
+    <LibraryPath>..\..\3rd party\glfw-3.2.1.bin.WIN64\glfw-3.2.1.bin.WIN64\lib-vc2015;..\..\3rd party\assimp\lib\x64;..\..\3rd party\pthreads-win32\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>..\..\3rd party\glfw-3.2.1.bin.WIN64\glfw-3.2.1.bin.WIN64\include;..\..\3rd party\glad\include;..\..\3rd party\glm-0.9.9-a1\glm-0.9.9-a1;..\..\3rd party\assimp\include;..\..\ramo-core\include;..\..\3rd party\pthreads-win32\include;..\..\..\RAMO\Source Code\core\include;..\..\..\RAMO\Source Code\core\3rd_party;D:\repository\RAMO\Source Code\core\include\3rd_party;$(IncludePath);$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <LibraryPath>..\..\3rd party\glfw-3.2.1.bin.WIN64\glfw-3.2.1.bin.WIN64\lib-vc2015;..\..\3rd party\assimp\lib\x64;..\..\3rd party\pthreads-win32\lib\x64;$(LibraryPath);$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;DESKTOP_GLFW;OFFLINE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>pthreadVC2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;DESKTOP_GLFW;OFFLINE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>pthreadVC2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\3rd_party\ndollar\GeometricRecognizer.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\3rd_party\ndollar\GeometricRecognizerTypes.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\3rd_party\ndollar\GestureTemplate.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\3rd_party\ndollar\MultipleStrokeGestureTemplate.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\3rd_party\ndollar\PathWriter.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\3rd_party\ndollar\SampleGestures.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\3rd_party\ndollar\SampleMultiStrokeGestures.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\3rd_party\ndollar\utils.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\3rd_party\stb_image.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\adapter.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\common.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\data\battlefield.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\data\game_data.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\effects\fireball.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\effects\lightning_strike.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\effects\particle_system.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\effects\rune_summon_fx.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\engine\engine.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\engine\event.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\engine\graphics.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\engine\state.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\game\actor.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\game\actor_builder.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\game\assimp_gameobject.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\game\battlefield_crystal.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\game\battle_field.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\game\fire_sentinel.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\game\game.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\game\game_character.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\game\hex_tile.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\game\manastone_gameobject.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\game\mana_stone.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\game\melee_actor.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\game\rune.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\game\sharp_scale.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\graphics\animated_sprite.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\graphics\assimp_mesh.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\graphics\assimp_mesh_sprite.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\graphics\billboard.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\graphics\bitmap_font.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\graphics\custom_mesh.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\graphics\FBO.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\graphics\fog_fx.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\graphics\gaussian_blur.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\graphics\glshaderfx.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\graphics\obj_model.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\graphics\point_light_fx.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\graphics\solid_rect.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\graphics\sprite2D.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\graphics\stroking\Point2D.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\graphics\stroking\Stroking2D.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\graphics\texture2D.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\graphics\textured_rect3d.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\network\linux_socket.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\network\netpacket.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\network\netpacket_factory.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\network\network_manager.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\network\net_socket.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\network\windows_socket.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\platform\android_platform.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\platform\desktop_glfw_platform.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\platform\platform_adapter.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\resource.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\scene\assimp_clone.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\scene\camera.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\scene\component_system.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\scene\game_object.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\scene\object2D.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\scene\transition_effects.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\states\battle_state.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\states\loader_state.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\states\map_state.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\states\splash_state.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\ui\button.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\ui\cast_window.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\ui\dormant_window.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\ui\listbox.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\ui\manastone_details_wndw.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\ui\message_box.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\ui\progress_bar.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\ui\rect_button.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\ui\sliding_window.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\ui\stone_placement_window.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\ui\summon_window.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\ui\uibase.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\ui\uimanager.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\ui\window.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\unittest\unittest_1.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\utility\Interpolator.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\utility\logger.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\utility\path_utility.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\utility\Random.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\utility\string_helper.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\utility\timer.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\utility\tokenizer.h" />
+    <ClInclude Include="..\..\..\RAMO\Source Code\core\include\utility\utility.h" />
+    <ClInclude Include="ComponentSystem.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\3rd_party\pdollar\Geometry.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\3rd_party\pdollar\Gesture.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\3rd_party\pdollar\PointCloudRecognizer.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\adapter.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\data\battlefield.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\data\game_data.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\effects\fireball.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\effects\lightning_strike.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\effects\particle_system.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\effects\rune_summon_fx.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\engine\engine.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\engine\event.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\engine\graphics.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\engine\state.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\actor.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\actor_builder.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\assimp_gameobject.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\battlefield_crystal.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\fire_sentinel.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\game.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\manastone_gameobject.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\mana_stone.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\melee_actor.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\rune.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\game\sharp_scale.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\graphics\animated_sprite.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\graphics\assimp_mesh.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\graphics\assimp_mesh_sprite.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\graphics\billboard.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\graphics\bitmap_font.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\graphics\custom_mesh.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\graphics\FBO.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\graphics\fog_fx.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\graphics\gaussian_blur.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\graphics\glshaderfx.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\graphics\point_light_fx.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\graphics\solid_rect.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\graphics\sprite2D.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\graphics\stroking\Point2D.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\graphics\stroking\Stroking2D.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\graphics\texture2D.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\graphics\textured_rect3d.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\map\MapUtil.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\network\HttpParser.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\network\netpacket.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\network\netpacket_factory.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\network\network_manager.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\network\socket_factory.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\network\windows_socket.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\platform\desktop_glfw_platform.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\platform\platform_adapter.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\resource\resource.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\scene\assimp_clone.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\scene\camera.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\scene\component_system.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\scene\game_object.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\scene\object2D.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\scene\transition_effects.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\scene\unity_animation_curve.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\states\battle_state.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\states\loader_state.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\states\map_state.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\states\splash_state.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\states\town_state.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\animated_button.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\button.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\cast_window.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\dormant_window.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\fade_window.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\horz_listbox.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\listbox.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\manastone_details_wndw.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\match_window.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\message_box.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\progress_bar.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\rect_button.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\sliding_window.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\stone_placement_window.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\summon_window.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\uibase.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\uimanager.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\window.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\ui\zoom_window.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\unittest\unittest_1.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\utility\logger.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\utility\path_utility.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\utility\string_helper.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\utility\timer.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\utility\tokenizer.cpp" />
+    <ClCompile Include="..\..\..\RAMO\Source Code\core\utility\utility.cpp" />
+    <ClCompile Include="..\..\3rd party\glad\src\glad.c" />
+    <ClCompile Include="ComponentSystem.cpp" />
+    <ClCompile Include="OpenGLTest.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

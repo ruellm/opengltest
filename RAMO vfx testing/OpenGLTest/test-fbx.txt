@@ -1,0 +1,11 @@
+add fbx
+filepath = ./models/A1/A1 - 3D.fbx
+position = 0,0,0
+add_animation = 0, 48, 95, true
+set_animation = 0
+
+update_start
+   rotationY = 100
+update_end
+
+end

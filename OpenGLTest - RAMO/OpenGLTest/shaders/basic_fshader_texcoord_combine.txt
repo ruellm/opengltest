@@ -1,0 +1,13 @@
+out vec4 FragColor;
+
+in vec2 TexCoord; // the input variable from the vertex shader(same name same type)
+uniform sampler2D gSampler;
+uniform sampler2D gSampler2;
+
+void main()
+{
+	vec4 color1 = texture(gSampler, TexCoord);
+	vec4 color2 = texture(gSampler2, TexCoord);
+	
+	FragColor = color1 + color2;
+}

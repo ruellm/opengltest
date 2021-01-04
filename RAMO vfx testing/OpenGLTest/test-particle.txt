@@ -1,0 +1,23 @@
+add particle
+position= -0.5,2,0
+filepath=./textures/particle/f4.png
+start_size = 100
+max_particles = 1000
+life_time = 2.0
+start_color = 1, 0.8, 0.3, 1
+start_speed = 10
+
+shape = cube
+shape.velocity =0,1,0
+shape.cube.thicknessX = 2
+shape.cube.thicknessY = 0
+shape.cube.thicknessZ = 2
+
+color_over_lifetime = 0.05, 1.0f, 0.5f, 0.18, 1
+color_over_lifetime = 0.8, 1.0f, 0.0f, 0.0, 1
+color_over_lifetime = 0.9, 0.01f, 0.01f, 0.01, 1
+
+blend_mode = additive
+
+end 
+

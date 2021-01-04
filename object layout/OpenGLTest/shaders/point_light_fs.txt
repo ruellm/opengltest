@@ -1,0 +1,30 @@
+in vec3 toLightVector[4];
+uniform int lightCountFS;
+//uniform vec3 attenuation[4];
+uniform vec3 lightColor[4];
+
+vec4 ComputePointLights(vec3 surfaceNormal)
+{
+	vec3 unitNormal = normalize(surfaceNormal);
+	vec3 totalDiffuse = vec3(0.0);
+	
+	for(int i = 0; i < lightCountFS; i++)
+	{
+		float distance = length(toLightVector[i]);
+		//float attFactor = 1/(attenuation[i].x + (attenuation[i].y * distance) + (attenuation[i].z * distance * distance));
+		
+		vec3 unitLightVector = normalize(toLightVector[i]);
+		float nDot1 = dot(unitNormal, unitLightVector);
+		float brightness = max(nDot1, 0.0);
+		
+		// for normal per pixel lighting we dont need attFactor
+		vec3 diffuse = (brightness * lightColor[i]);
+		//vec3 diffuse = attFactor * lightColor[i];
+		
+		totalDiffuse += diffuse;
+		
+	}	
+	
+	totalDiffuse = max(totalDiffuse, 0.5);
+	return vec4(totalDiffuse, 1.0);
+}

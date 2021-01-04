@@ -1,0 +1,17 @@
+out vec4 FragColor;
+
+in vec2 TexCoord;
+
+uniform sampler2D scene;
+uniform sampler2D bloomBlur;
+//uniform bool bloom;
+uniform float exposure;
+
+void main()
+{             
+    const float gamma = 2.2;
+    vec4 hdrColor = texture(scene, TexCoord);      
+    vec4 bloomColor = texture(bloomBlur, TexCoord);
+	
+	FragColor = hdrColor + bloomColor;
+}

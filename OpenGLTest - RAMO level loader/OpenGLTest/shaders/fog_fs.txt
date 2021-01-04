@@ -1,0 +1,8 @@
+in float visibility;
+uniform vec3 fog_skycolor;
+uniform int fog_fs_enable;
+
+vec4 Fog_GetFogColor(vec4 color)
+{
+	return  mix(vec4(fog_skycolor,1.0), color, visibility);
+}

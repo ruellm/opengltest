@@ -1,0 +1,16 @@
+out vec4 FragColor;
+
+in vec2 TexCoord; // the input variable from the vertex shader(same name same type)
+uniform sampler2D texture;
+uniform int isScreen;
+uniform float alpha;
+
+void main()
+{
+	vec4 color = texture(texture, TexCoord); 
+	if (isScreen==1){
+		color = vec4(0,0,0,alpha);
+	}
+
+	FragColor = color;
+}

@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="glad">
+      <UniqueIdentifier>{f184866f-d17e-4977-a8a8-56a7a84d061d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{7b89dd4c-c80f-41b8-aa6a-2d1491af3d6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core">
+      <UniqueIdentifier>{cb08f7cf-064b-4a12-bddf-dec8d2e275e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core\include">
+      <UniqueIdentifier>{25e530ae-a81f-485d-8421-3c9c18c67590}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ramo-core\source">
+      <UniqueIdentifier>{57e02704-c7df-46e0-9a74-db0962ffe28e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+    <Text Include="shaders\basic_fshader.txt">
+      <Filter>shaders</Filter>
+    </Text>
+    <Text Include="shaders\basic_vshader.txt">
+      <Filter>shaders</Filter>
+    </Text>
+    <Text Include="shaders\vshader_world.txt">
+      <Filter>shaders</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ramo-core\include\common.h">
+      <Filter>ramo-core\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ramo-core\include\logger.h">
+      <Filter>ramo-core\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ramo-core\include\graphics\assimp_mesh.h">
+      <Filter>ramo-core\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ramo-core\include\graphics\glshaderfx.h">
+      <Filter>ramo-core\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ramo-core\include\graphics\texture2D.h">
+      <Filter>ramo-core\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ramo-core\include\effects\particle_system.h">
+      <Filter>ramo-core\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ramo-core\include\scene\game_object.h">
+      <Filter>ramo-core\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ramo-core\include\graphics\custom_mesh.h">
+      <Filter>ramo-core\include</Filter>
+    </ClInclude>
+    <ClInclude Include="fire_particle2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fireball.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\3rd party\glad\src\glad.c">
+      <Filter>glad</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ramo-core\utility\logger.cpp">
+      <Filter>ramo-core\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ramo-core\scene\camera.cpp">
+      <Filter>ramo-core\source</Filter>
+    </ClCompile>
+    <ClCompile Include="RAMOUnitTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ramo-core\graphics\assimp_mesh.cpp">
+      <Filter>ramo-core\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ramo-core\graphics\glshaderfx.cpp">
+      <Filter>ramo-core\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ramo-core\graphics\texture2D.cpp">
+      <Filter>ramo-core\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ramo-core\effects\particle_system.cpp">
+      <Filter>ramo-core\source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ramo-core\graphics\custom_mesh.cpp">
+      <Filter>ramo-core\source</Filter>
+    </ClCompile>
+    <ClCompile Include="fire_particle2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fireball.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\skinning.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="shaders\skinning.vs">
+      <Filter>shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>

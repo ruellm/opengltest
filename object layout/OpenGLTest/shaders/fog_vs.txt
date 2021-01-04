@@ -1,0 +1,13 @@
+out float visibility;
+
+uniform int fog_vs_enable;
+
+uniform float density;
+uniform float gradient;
+
+void Fog_ComputeVisibility(vec4 positionRelativeToCam)
+{
+	float distance = length(positionRelativeToCam.xyz);
+	visibility = exp(-pow((distance * density), gradient));
+	visibility = clamp(visibility, 0.0, 1.0);
+}

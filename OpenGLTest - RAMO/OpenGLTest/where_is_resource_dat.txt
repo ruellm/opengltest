@@ -1,0 +1,8 @@
+to re-create resource.dat 
+1. in the asset folder, highlight/select all folder
+2. using your archiving tool (7zip, winrar, etc), right click and "Add to Archive"
+   named your zip file as 'input.zip'
+3. go to tools\Covid19\bin and copy the file locally here
+   check on run.bat if input filename is correct
+   execute run.bat it will produce COVID19.dat, rename it to "resource.dat"
+   and copy to asset folder or to OpenGLTest - RAMO\OpenGLTest (svn).

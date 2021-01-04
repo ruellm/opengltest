@@ -1,0 +1,27 @@
+add particle
+filepath=./textures/particle/f4.png
+start_size = 1
+max_particles = 10
+life_time = 1.0
+start_color = 1, 1, 1, 1
+start_speed = 10
+
+shape = circle
+shape.circle.radius = 5.0
+shape.velocity = 0,1,0
+
+blend_mode = additive
+
+end 
+
+add ground_rectangle
+position= 0,0,0
+filepath=./textures/runecircle.png
+dimension = 5,5
+
+update_start
+   rotationY = 100
+   alpha = 0.1
+update_end
+
+end

@@ -1,0 +1,13 @@
+layout (location = 0) in vec3 position; // the position variable has attribute position 0
+layout (location = 1) in vec2 textCoord;
+
+out vec2 TexCoord; //specify a color output to the fragment shader
+
+void main()
+{
+	vec2 homogeneous = position.xy;
+	homogeneous.x = (2.0  * position.x / 800.0 - 1); //800 is screeb width
+	homogeneous.y = (-2.0 * position.y / 600 + 1); // 600 is screen height
+	gl_Position = vec4(homogeneous, 0.0, 1.0);
+	TexCoord = textCoord;
+}

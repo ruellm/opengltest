@@ -1,0 +1,27 @@
+layout (location = 0) in vec3 vPosition;
+layout (location = 1) in vec2 vTexCoord;
+layout (location = 2) in vec3 vNormal;
+
+uniform mat4 viewMatrix;
+uniform mat4 projectionMatrix;
+uniform mat4 worldMatrix;
+
+out vec2 TexCoord0;	
+out vec3 Normal0;
+
+
+void main()                                                                   
+{                                                                     
+	 gl_Position =   projectionMatrix * viewMatrix *  worldMatrix * vec4(vPosition, 1.0);
+	 TexCoord0 = vTexCoord;
+	 Normal0 = vNormal;
+
+	 if(fog_enable)
+	 {
+		vec4 worldPosition = worldMatrix * vec4(vPosition, 1.0f)
+		vec4 positionRelativeToCam = viewMatrix * worldPosition;
+		Fog_ComputeVisibility();
+	 }
+}
+//---
+

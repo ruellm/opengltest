@@ -1,0 +1,33 @@
+add billboard
+filepath=./textures/hearts.png
+dimension = 1,1
+position = 0,2,0
+# animation parameters
+frame_width=42
+frame_count=10
+fps=15
+loop=true
+end
+
+add particle
+position= -0.5,2,0
+filepath=./textures/particle/f4.png
+start_size = 0.50
+max_particles = 1000
+life_time = 1.0
+start_color = 1, 1, 1, 1
+start_speed = 3.0
+
+shape = cube
+shape.velocity =-1,0,0
+shape.cube.thicknessX = 0
+shape.cube.thicknessY = 0
+shape.cube.thicknessZ = 0
+
+size_over_lifetime = 0.0, 0.5
+size_over_lifetime = 1.0, 0
+
+blend_mode = additive
+
+end 
+

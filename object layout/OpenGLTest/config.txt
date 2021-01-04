@@ -1,0 +1,6 @@
+fov=60
+fog=true
+fog_density=0.0035
+fog_gradient=3.0
+light_position=0,51,0
+light_config=terrain

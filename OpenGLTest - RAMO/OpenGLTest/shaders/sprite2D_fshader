@@ -1,0 +1,13 @@
+in vec2 TexCoord;
+out vec4 FragColor;
+
+uniform sampler2D gSampler;
+uniform float alpha;
+
+void main()
+{
+    FragColor = texture(gSampler, TexCoord);
+    FragColor.a *= alpha;
+	if(FragColor.a == 0.0)
+		discard;
+}

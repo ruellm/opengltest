@@ -1,0 +1,28 @@
+#version 330
+layout (location = 0) in vec3 position; // the position variable has attribute position 0
+layout (location = 1) in vec2 textCoord;
+
+out vec2 TexCoord; //specify a color output to the fragment shader
+uniform mat4 model;
+uniform mat4 projection;
+uniform mat4 view;
+
+uniform vec3 BillboardPos; // Position of the center of the billboard
+uniform vec2 BillboardSize; // Size of the billboard, in world units (probably meters)
+uniform vec3 CameraRight_worldspace;
+uniform vec3 CameraUp_worldspace;
+
+void main()
+{
+	vec3 particleCenter_wordspace = BillboardPos;
+	
+	vec3 vertexPosition_worldspace = 
+		particleCenter_wordspace
+		+ CameraRight_worldspace * position.x * BillboardSize.x
+		+ CameraUp_worldspace * position.z * BillboardSize.z;
+
+
+	// Output position of the vertex
+	gl_Position = projection * view * vec4(vertexPosition_worldspace, 1.0f);
+	TexCoord = textCoord;
+}

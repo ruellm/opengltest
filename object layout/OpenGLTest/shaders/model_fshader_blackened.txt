@@ -1,0 +1,12 @@
+out vec4 FragColor;                                                           
+in vec2 TexCoord0; 																			 
+in vec3 Normal0;  /* Variable names must MATCH with output from vertex shader*/
+
+uniform sampler2D gSampler;                                                        
+uniform float alpha;
+			
+void main()                                                                   
+{                                                                             
+	FragColor =  vec4(0,0,0,1);	
+}
+//---
